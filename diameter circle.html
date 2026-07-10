@@ -1,0 +1,22 @@
+ <!DOCTYPE html>
+<html>
+<head>
+  <title> Diameter Formulas </title>
+<script>
+  function DiameterCircle(){
+    let radius = document.getElementById("radiusInput").value;
+    let diameter = 2 * radius;
+    document.getElementById("demo").innerHTML ="Diameter: " + diameter;
+  }
+  </script>
+  </head>
+  <body>
+      <h2>Diameter of a Circle</h2>
+      <p>Radius: <input type="text" id="radiusInput"></p>
+      <button type="button" onclick="DiameterCircle()">Get Diameter</button>
+
+        <h3>d = 2 r</h3>
+        <p id="demo"> Diameter will show here</p>
+      </body>
+    </html>
+      

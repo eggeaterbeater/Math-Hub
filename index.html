@@ -1,0 +1,69 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<script>
+function myFunction() {
+  document.getElementById("demo").innerHTML = "me is happu.";
+}
+function myName() {
+  document.getElementById("Name").innerHTML = "Name.";
+}
+
+let firstnumber = 5;
+let secondnumber = 2;
+let sum = firstnumber + secondnumber;
+
+function mysum() {
+  document.getElementById("add").innerHTML = "The sum is  " + sum;
+}
+
+let firstNumber = 5;
+let secondNumber = 2;
+let difference = firstNumber - secondNumber;
+
+function mydifference() {
+  document.getElementById("minus").innerHTML = "The difference is  " + difference;
+}
+
+let FirstNumber = 5;
+let SecondNumber = 2;
+let quotient = FirstNumber / SecondNumber;
+
+function myquotient() {
+  document.getElementById("divide").innerHTML = "The quotient is  " + quotient;
+}
+
+let Firstnumber = 5;
+let Secondnumber = 2;
+let product = Firstnumber * Secondnumber;
+
+function myproduct() {
+  document.getElementById("multiply").innerHTML = "The product is  " + product;
+}
+
+
+</script>
+</head>
+<body>
+<h2>Prez the buttonz</h2>
+
+<p id="demo">Text will show here    </p>
+<button type="button" onclick="myFunction()">clicku diz</button>
+
+<p id="Name">Name will show here</p>
+<button type="button" onclick="myName()">clicku diz</button>
+
+<p id="add">Sum will show here</p>
+<button type="button" onclick="mysum()">calculate sum</button>
+
+<p id="minus">Difference will show here</p>
+<button type="button" onclick="mydifference()">calculate difference</button>
+
+<p id="divide">Quotient will show here</p>
+<button type="button" onclick="myquotient()">calculate quotient</button>
+
+<p id="multiply">Product will show here</p>
+<button type="button" onclick="myproduct()">calculate product</button>
+
+</body>
+</html>
