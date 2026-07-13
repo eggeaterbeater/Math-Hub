@@ -1,69 +1,136 @@
  <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<script>
-function myFunction() {
-  document.getElementById("demo").innerHTML = "me is happu.";
-}
-function myName() {
-  document.getElementById("Name").innerHTML = "Name.";
-}
 
-let firstnumber = 5;
-let secondnumber = 2;
-let sum = firstnumber + secondnumber;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-function mysum() {
-  document.getElementById("add").innerHTML = "The sum is  " + sum;
-}
+    <title>Aniametic | Home</title>
 
-let firstNumber = 5;
-let secondNumber = 2;
-let difference = firstNumber - secondNumber;
+    <link rel="stylesheet" href="style.css">
 
-function mydifference() {
-  document.getElementById("minus").innerHTML = "The difference is  " + difference;
-}
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-let FirstNumber = 5;
-let SecondNumber = 2;
-let quotient = FirstNumber / SecondNumber;
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
-function myquotient() {
-  document.getElementById("divide").innerHTML = "The quotient is  " + quotient;
-}
-
-let Firstnumber = 5;
-let Secondnumber = 2;
-let product = Firstnumber * Secondnumber;
-
-function myproduct() {
-  document.getElementById("multiply").innerHTML = "The product is  " + product;
-}
-
-
-</script>
 </head>
+
 <body>
-<h2>Prez the buttonz</h2>
 
-<p id="demo">Text will show here    </p>
-<button type="button" onclick="myFunction()">clicku diz</button>
+<!-- ========================= -->
+<!-- Navigation -->
+<!-- ========================= -->
 
-<p id="Name">Name will show here</p>
-<button type="button" onclick="myName()">clicku diz</button>
+<header>
 
-<p id="add">Sum will show here</p>
-<button type="button" onclick="mysum()">calculate sum</button>
+<nav class="navbar">
 
-<p id="minus">Difference will show here</p>
-<button type="button" onclick="mydifference()">calculate difference</button>
+    <div class="logo">
 
-<p id="divide">Quotient will show here</p>
-<button type="button" onclick="myquotient()">calculate quotient</button>
+        <!-- Replace with your own logo -->
+        <img src="img/logo.png" alt="Aniametic Logo">
 
-<p id="multiply">Product will show here</p>
-<button type="button" onclick="myproduct()">calculate product</button>
+        <span>Aniametic</span>
 
-</body>
-</html>
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a class="active" href="index.html">Home</a></li>
+
+        <li><a href="calculator.html">Calculator</a></li>
+
+        <li><a href="diameter.html">Diameter</a></li>
+
+        <li><a href="area.html">Area</a></li>
+
+        <li><a href="volume.html">Volume</a></li>
+
+        <li><a href="perimeter.html">Perimeter</a></li>
+
+        <li><a href="about.html">About</a></li>
+
+    </ul>
+
+    <div class="menu-btn" onclick="toggleMenu()">
+
+        ☰
+
+    </div>
+
+</nav>
+
+</header>
+
+<!-- ========================= -->
+<!-- Hero -->
+<!-- ========================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <span class="welcome">
+
+            ✦ Welcome to
+
+        </span>
+
+        <h1>
+
+            Aniametic
+
+        </h1>
+
+        <h2>
+
+            Your Helpful Geometry Companion
+
+        </h2>
+
+        <p>
+
+            Welcome to <strong>Aniametic</strong>, a modern geometry website
+            designed to make mathematics easier, faster, and more enjoyable.
+            Explore calculators for Diameter, Area, Volume, Perimeter, and
+            many other mathematical operations through an elegant dark-themed
+            interface inspired by soft lavender tones.
+
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="calculator.html" class="primary-btn">
+
+                Start Calculating
+
+            </a>
+
+            <a href="about.html" class="secondary-btn">
+
+                About Me
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="hero-image">
+
+        <!-- Replace with your GIF -->
+        <img src="img/banner.gif" alt="Geometry Banner">
+
+    </div>
+
+</section>
+
+<!-- Decorative Blur -->
+
+<div class="blur-circle blur-one"></div>
+
+<div class="blur-circle blur-two"></div>
+
+<!-- Continue with Features Section -->
