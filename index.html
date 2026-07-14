@@ -1,7 +1,7 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
 
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -13,123 +13,470 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
+    <!-- ========================= -->
+    <!-- Navigation -->
+    <!-- ========================= -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+
+                <!-- Replace with your logo -->
+                <img src="img/logo.png" alt="Aniametric Logo">
+
+                <span>Aniametric</span>
+
+            </div>
+
+            <ul class="nav-links">
+
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="diameter.html">Diameter</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="volume.html">Volume</a></li>
+                <li><a href="perimeter.html">Perimeter</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+
+            <!-- Mobile Menu Icon -->
+            <div class="menu-btn">
+
+                ☰
+
+            </div>
+
+        </nav>
+
+    </header>
+
+    <!-- ========================= -->
+    <!-- Hero Section -->
+    <!-- ========================= -->
+
+    <section class="hero">
+
+        <div class="hero-text">
+
+            <p class="welcome">
+
+                ✦ Welcome to
+
+            </p>
+
+            <h1>
+
+                Aniametric
+
+            </h1>
+
+            <h2>
+
+                Where Geometry Meets Simplicity
+
+            </h2>
+
+            <p>
+
+                Welcome to <strong>Aniametric</strong>, a modern geometry
+                website created to help students solve mathematical
+                problems with ease. Explore calculators for Diameter,
+                Area, Volume, Perimeter, and more—all in one place.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="calculator.html" class="btn">
+
+                    Start Calculating
+
+                </a>
+
+                <a href="about.html" class="btn-outline">
+
+                    About Me
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <!-- Replace with your GIF -->
+            <img src="img/banner.gif" alt="Geometry GIF">
+
+        </div>
+
+    </section>
+
+    <!-- Decorative Background Glow -->
+
+    <div class="glow glow1"></div>
+    <div class="glow glow2"></div>
+
+ <!-- ========================= -->
+<!-- What We Offer -->
 <!-- ========================= -->
-<!-- Navigation -->
-<!-- ========================= -->
 
-<header>
+<section class="features">
 
-<nav class="navbar">
+    <h2>What We Offer</h2>
 
-    <div class="logo">
+    <p class="section-description">
+        Discover useful mathematical tools designed to help you solve
+        geometry problems quickly, accurately, and efficiently.
+    </p>
 
-        <!-- Replace with your own logo -->
-        <img src="img/logo.png" alt="Aniametic Logo">
+    <div class="feature-container">
 
-        <span>Aniametric</span>
+        <div class="feature-card">
 
-    </div>
+            <h3>🧮 Calculator</h3>
 
-    <ul class="nav-links">
+            <p>
+                Perform basic operations including addition,
+                subtraction, multiplication, division,
+                exponents, percentages, and square roots.
+            </p>
 
-        <li><a class="active" href="index.html">Home</a></li>
+        </div>
 
-        <li><a href="calculator.html">Calculator</a></li>
+        <div class="feature-card">
 
-        <li><a href="diameter.html">Diameter</a></li>
+            <h3>⭕ Diameter</h3>
 
-        <li><a href="area.html">Area</a></li>
+            <p>
+                Calculate diameter, radius,
+                and circumference using
+                built-in geometry formulas.
+            </p>
 
-        <li><a href="volume.html">Volume</a></li>
+        </div>
 
-        <li><a href="perimeter.html">Perimeter</a></li>
+        <div class="feature-card">
 
-        <li><a href="about.html">About</a></li>
+            <h3>📐 Area</h3>
 
-    </ul>
+            <p>
+                Find the area of rectangles,
+                squares, circles, triangles,
+                trapezoids, and parallelograms.
+            </p>
 
-    <div class="menu-btn" onclick="toggleMenu()">
+        </div>
 
-        ☰
+        <div class="feature-card">
 
-    </div>
+            <h3>📦 Volume</h3>
 
-</nav>
+            <p>
+                Easily solve the volume of cubes,
+                cylinders, cones,
+                spheres, and prisms.
+            </p>
 
-</header>
+        </div>
 
-<!-- ========================= -->
-<!-- Hero -->
-<!-- ========================= -->
+        <div class="feature-card">
 
-<section class="hero">
+            <h3>📏 Perimeter</h3>
 
-    <div class="hero-content">
+            <p>
+                Calculate the perimeter or
+                circumference of different
+                geometric figures.
+            </p>
 
-        <span class="welcome">
+        </div>
 
-            ✦ Welcome to
+        <div class="feature-card">
 
-        </span>
+            <h3>📱 Responsive</h3>
 
-        <h1>
-
-            Aniametric
-
-        </h1>
-
-        <h2>
-
-            Your Helpful Geometry Companion
-
-        </h2>
-
-        <p>
-
-            Welcome to <strong>Aniametric</strong>, a modern geometry website
-            designed to make mathematics easier, faster, and more enjoyable.
-            Explore calculators for Diameter, Area, Volume, Perimeter, and
-            many other mathematical operations.
-
-        </p>
-
-        <div class="hero-buttons">
-
-            <a href="calculator.html" class="primary-btn">
-
-                Start Calculating
-
-            </a>
-
-            <a href="about.html" class="secondary-btn">
-
-                About Me
-
-            </a>
+            <p>
+                Designed to work beautifully on
+                desktops, tablets,
+                and mobile devices.
+            </p>
 
         </div>
 
     </div>
 
-    <div class="hero-image">
+</section>
 
-        <!-- Replace with your GIF -->
-        <img src="background.img" alt="Geometry Banner">
+
+
+<!-- ========================= -->
+<!-- Why Choose -->
+<!-- ========================= -->
+
+<section class="why">
+
+    <div class="why-image">
+
+        <!-- Replace with another GIF or image -->
+        <img src="img/math.gif" alt="Math GIF">
+
+    </div>
+
+    <div class="why-text">
+
+        <h2>Why Choose Aniametric?</h2>
+
+        <p>
+
+            Mathematics becomes easier when you have the
+            right tools. Aniametric combines modern design,
+            simple navigation, and accurate calculators
+            to make solving geometry problems enjoyable.
+
+        </p>
+
+        <div class="why-list">
+
+            <div class="why-item">
+
+                <span>✔</span>
+
+                <p>Simple and beginner-friendly interface</p>
+
+            </div>
+
+            <div class="why-item">
+
+                <span>✔</span>
+
+                <p>Accurate geometry formulas</p>
+
+            </div>
+
+            <div class="why-item">
+
+                <span>✔</span>
+
+                <p>Modern dark aesthetic design</p>
+
+            </div>
+
+            <div class="why-item">
+
+                <span>✔</span>
+
+                <p>Accessible on desktop and mobile</p>
+
+            </div>
+
+        </div>
 
     </div>
 
 </section>
 
-<!-- Decorative Blur -->
 
-<div class="blur-circle blur-one"></div>
 
-<div class="blur-circle blur-two"></div>
+<!-- ========================= -->
+<!-- Quick Facts -->
+<!-- ========================= -->
 
-<!-- Continue with Features Section -->
+<section class="facts">
+
+    <h2>Geometry Facts</h2>
+
+    <div class="facts-container">
+
+        <div class="fact-card">
+
+            <h3>360°</h3>
+
+            <p>
+                The sum of all angles around a point.
+            </p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h3>π (3.14159)</h3>
+
+            <p>
+                Used to calculate circles,
+                circumferences, and spheres.
+            </p>
+
+        </div>
+
+        <div class="fact-card">
+
+            <h3>180°</h3>
+
+            <p>
+                The sum of the interior angles
+                of every triangle.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- Quote -->
+<!-- ========================= -->
+
+<section class="quote">
+
+    <blockquote>
+
+        “Geometry is one and eternal shining in the mind of God.”
+
+    </blockquote>
+
+    <h4>
+
+        — Johannes Kepler
+
+    </h4>
+
+</section>
+
+
+
+<section class="decorative">
+
+    <!-- Replace with your decorative GIF -->
+
+    <img src="img/sparkles.gif" alt="Sparkles">
+
+</section>
+
+ <!-- ========================= -->
+<!-- Call to Action -->
+<!-- ========================= -->
+
+<section class="cta">
+
+    <div class="cta-content">
+
+        <h2>Ready to Explore Geometry?</h2>
+
+        <p>
+            Start solving mathematical problems with ease using our
+            interactive geometry calculators. Learn, calculate,
+            and improve your mathematical skills with Aniametric.
+        </p>
+
+        <a href="calculator.html" class="btn">
+
+            Explore Now
+
+        </a>
+
+    </div>
+
+</section>
+
+
+
+<!-- ========================= -->
+<!-- Footer -->
+<!-- ========================= -->
+
+<footer>
+
+    <div class="footer-container">
+
+        <div class="footer-about">
+
+            <h2>Aniametric</h2>
+
+            <p>
+
+                A modern geometry website designed to help students
+                understand mathematical concepts through
+                easy-to-use calculators and interactive tools.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <ul>
+
+                <li><a href="index.html">Home</a></li>
+                <li><a href="calculator.html">Calculator</a></li>
+                <li><a href="diameter.html">Diameter</a></li>
+                <li><a href="area.html">Area</a></li>
+                <li><a href="volume.html">Volume</a></li>
+                <li><a href="perimeter.html">Perimeter</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+
+        </div>
+
+
+
+        <div class="footer-contact">
+
+            <h3>Contact</h3>
+
+            <p>Email: your@email.com</p>
+
+            <p>School Project</p>
+
+            <p>Grade 9 STE</p>
+
+        </div>
+
+    </div>
+
+
+
+    <hr>
+
+
+
+    <div class="copyright">
+
+        <p>
+
+            © 2026 <strong>Aniametric</strong> |
+            Designed by <strong>Quisha Aniana</strong>
+
+        </p>
+
+    </div>
+
+</footer>
+
+
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
+
+
