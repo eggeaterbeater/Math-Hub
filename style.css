@@ -1,1 +1,476 @@
-this is for style ok
+ ANIAMETRIC
+   Geometry Website
+   Created by: Quisha Aniana
+========================================== */
+
+/*========== GOOGLE FONT ==========*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+/*========== CUSTOM FONT ==========*/
+
+@font-face{
+    font-family: "Aniametric";
+    src: url("fonts/poti.ttf") format("truetype");
+}
+
+
+/*========== ROOT COLORS ==========*/
+
+:root{
+
+    --background:#171318;
+    --section:#201B22;
+    --card:#2A2430;
+
+    --primary:#8F7589;
+    --secondary:#B497AB;
+
+    --text:#F5EFF4;
+    --light:#DDD2D9;
+
+    --shadow:rgba(0,0,0,.35);
+    --glow:rgba(180,151,171,.25);
+
+    --radius:22px;
+
+    --transition:.35s ease;
+
+}
+
+
+/*========== RESET ==========*/
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    text-decoration:none;
+    list-style:none;
+    scroll-behavior:smooth;
+}
+
+
+body{
+
+    background:var(--background);
+
+    color:var(--text);
+
+    font-family:'Poppins',sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+/*========== SCROLLBAR ==========*/
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+::-webkit-scrollbar-track{
+
+    background:#1a171d;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+    background:var(--primary);
+
+    border-radius:20px;
+
+}
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:var(--secondary);
+
+}
+
+
+/*========== NAVIGATION ==========*/
+
+header{
+
+    position:fixed;
+
+    width:100%;
+
+    top:0;
+
+    left:0;
+
+    z-index:999;
+
+    padding:18px 8%;
+
+}
+
+
+.navbar{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:15px 30px;
+
+    border-radius:20px;
+
+    background:rgba(42,36,48,.55);
+
+    backdrop-filter:blur(14px);
+
+    border:1px solid rgba(255,255,255,.06);
+
+    box-shadow:0 8px 25px var(--shadow);
+
+}
+
+
+/*========== LOGO ==========*/
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+}
+
+
+.logo img{
+
+    width:48px;
+
+    height:48px;
+
+    object-fit:cover;
+
+}
+
+
+.logo span{
+
+    font-family:"Aniametric";
+
+    font-size:2rem;
+
+    color:white;
+
+    letter-spacing:2px;
+
+}
+
+
+/*========== NAV LINKS ==========*/
+
+.nav-links{
+
+    display:flex;
+
+    gap:32px;
+
+}
+
+
+.nav-links a{
+
+    color:var(--light);
+
+    font-weight:500;
+
+    transition:var(--transition);
+
+    position:relative;
+
+}
+
+
+.nav-links a:hover{
+
+    color:white;
+
+}
+
+
+.nav-links a::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:-8px;
+
+    width:0%;
+
+    height:2px;
+
+    background:var(--secondary);
+
+    transition:.4s;
+
+}
+
+
+.nav-links a:hover::after{
+
+    width:100%;
+
+}
+
+
+.active{
+
+    color:white !important;
+
+}
+
+
+/*========== MENU BUTTON ==========*/
+
+.menu-btn{
+
+    display:none;
+
+    color:white;
+
+    font-size:30px;
+
+    cursor:pointer;
+
+}
+
+
+/*========== HERO ==========*/
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:130px 8% 80px;
+
+    gap:60px;
+
+}
+
+
+.hero-content{
+
+    flex:1;
+
+}
+
+
+.welcome{
+
+    color:var(--secondary);
+
+    font-size:1rem;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+}
+
+
+.hero h1{
+
+    font-family:"Aniametric";
+
+    font-size:6rem;
+
+    color:white;
+
+    margin:15px 0;
+
+}
+
+
+.hero h2{
+
+    font-size:2rem;
+
+    color:var(--secondary);
+
+    margin-bottom:20px;
+
+}
+
+
+.hero p{
+
+    max-width:650px;
+
+    line-height:1.9;
+
+    color:var(--light);
+
+    margin-bottom:40px;
+
+}
+
+
+/*========== HERO IMAGE ==========*/
+
+.hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:520px;
+
+    border-radius:30px;
+
+    box-shadow:0 0 40px var(--glow);
+
+}
+
+
+/*========== BUTTONS ==========*/
+
+.hero-buttons{
+
+    display:flex;
+
+    gap:20px;
+
+}
+
+
+.primary-btn,
+.secondary-btn{
+
+    padding:15px 35px;
+
+    border-radius:50px;
+
+    transition:.4s;
+
+    font-weight:600;
+
+}
+
+
+.primary-btn{
+
+    background:linear-gradient(
+    135deg,
+    var(--primary),
+    var(--secondary));
+
+    color:white;
+
+}
+
+
+.primary-btn:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 0 30px var(--glow);
+
+}
+
+
+.secondary-btn{
+
+    border:2px solid var(--secondary);
+
+    color:white;
+
+}
+
+
+.secondary-btn:hover{
+
+    background:var(--secondary);
+
+    color:#18141b;
+
+}
+
+
+/*========== GLOWING BACKGROUND ==========*/
+
+.blur-circle{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    filter:blur(120px);
+
+    opacity:.4;
+
+    z-index:-1;
+
+}
+
+
+.blur-one{
+
+    width:350px;
+
+    height:350px;
+
+    background:#8F7589;
+
+    top:120px;
+
+    right:-100px;
+
+}
+
+
+.blur-two{
+
+    width:300px;
+
+    height:300px;
+
+    background:#4A3751;
+
+    left:-120px;
+
+    bottom:100px;
+
+}
+
+
+/*========== SECTION ==========*/
+
+section{
+
+    padding:90px 8%;
+
+}
