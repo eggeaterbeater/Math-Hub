@@ -70,13 +70,10 @@ display.value = eval(display.value)/100;
 }
 
 function squareRoot(){
-
-display.value = Math.sqrt(eval(display.value));
-
+    display.value = "Math.sqrt(" + display.value + ")";
 }
 
 function power(){
-
-display.value = Math.pow(eval(display.value),2);
-
+    display.value = "(" + display.value + ")**2";
 }
+
