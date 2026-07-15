@@ -1927,6 +1927,31 @@ animation:shake .35s;
 
 }
 
+.history p{
+
+    animation:fadeHistory .4s ease;
+
+}
+
+@keyframes fadeHistory{
+
+    from{
+
+        opacity:0;
+
+        transform:translateX(-20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateX(0);
+
+    }
+
+}
 
 /*======================================
         END OF STYLESHEET
