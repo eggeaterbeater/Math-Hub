@@ -2,121 +2,90 @@
 <html lang="en">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Aniametric | Calculator</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
 
+<!--================ HEADER ================-->
+
 <header>
 
-    <nav class="navbar">
-        
-            <span>Aniametric</span>
-        </div>
+<nav class="navbar">
 
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a class="active" href="calculator.html">Calculator</a></li>
-            <li><a href="diameter.html">Diameter</a></li>
-            <li><a href="area.html">Area</a></li>
-            <li><a href="volume.html">Volume</a></li>
-            <li><a href="perimeter.html">Perimeter</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
+<div class="logo">
 
-    </nav>
+<img src="img/logo.png" alt="Logo">
+
+<span>Aniametric</span>
+
+</div>
+
+<ul class="nav-links">
+
+<li><a href="index.html">Home</a></li>
+
+<li><a class="active" href="calculator.html">Calculator</a></li>
+
+<li><a href="diameter.html">Diameter</a></li>
+
+<li><a href="area.html">Area</a></li>
+
+<li><a href="volume.html">Volume</a></li>
+
+<li><a href="perimeter.html">Perimeter</a></li>
+
+<li><a href="about.html">About</a></li>
+
+</ul>
+
+<div class="menu-btn">
+
+☰
+
+</div>
+
+</nav>
 
 </header>
 
 
 
-<section class="page-title">
+<!--================ TITLE ================-->
 
-    <h1>Calculator</h1>
+<section class="page-title fade-in">
 
-    <p>
+<h1>Calculator</h1>
 
-        Perform mathematical operations instantly.
+<p>
 
-    </p>
+Perform mathematical calculations with ease.
+
+</p>
 
 </section>
 
 
 
+<!--================ CALCULATOR ================-->
+
 <section class="calculator-section">
 
-<div class="calculator">
+<div class="calculator-box">
 
 <input
 type="text"
 id="display"
-readonly
 placeholder="0"
+readonly
 >
 
-<div class="buttons">
-
-<button onclick="clearDisplay()">C</button>
-
-<button onclick="appendValue('(')">(</button>
-
-<button onclick="appendValue(')')">)</button>
-
-<button class="operator" onclick="appendValue('/')">÷</button>
-
-
-<button onclick="appendValue('7')">7</button>
-
-<button onclick="appendValue('8')">8</button>
-
-<button onclick="appendValue('9')">9</button>
-
-<button class="operator" onclick="appendValue('*')">×</button>
-
-
-<button onclick="appendValue('4')">4</button>
-
-<button onclick="appendValue('5')">5</button>
-
-<button onclick="appendValue('6')">6</button>
-
-<button class="operator" onclick="appendValue('-')">−</button>
-
-
-<button onclick="appendValue('1')">1</button>
-
-<button onclick="appendValue('2')">2</button>
-
-<button onclick="appendValue('3')">3</button>
-
-<button class="operator" onclick="appendValue('+')">+</button>
-
-
-<button onclick="appendValue('0')">0</button>
-
-<button onclick="appendValue('.')">.</button>
-
-<button onclick="squareRoot()">√</button>
-
-<button onclick="power()">x²</button>
-
-<button onclick="percentage()">%</button>
-
-<button class="equals" onclick="calculate()">=</button>
-
-</div>
-
-</div>
-
-</section>
-
-<script src="script.js"></script>
-
-</body>
-
-</html>
+<div class="button-grid">
