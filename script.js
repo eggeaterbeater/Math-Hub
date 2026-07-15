@@ -64,8 +64,7 @@ function calculate(){
 }
 
 function percentage(){
-
-display.value = eval(display.value)/100;
+    display.value = "(" + display.value + ")/100";
 
 }
 
