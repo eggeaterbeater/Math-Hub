@@ -1883,9 +1883,9 @@ section{
 
 }
 
-.success{
-
-animation:pop .35s;
+.pop{
+    animation: pop .3s;
+}
 
 }
 
