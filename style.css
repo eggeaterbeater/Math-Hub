@@ -1954,5 +1954,126 @@ animation:shake .35s;
 }
 
 /*======================================
+        CALCULATOR APP
+=======================================*/
+
+.calculator-section{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:50px 0;
+
+}
+
+.calculator-box{
+
+    width:380px;
+
+    background:var(--card);
+
+    padding:30px;
+
+    border-radius:25px;
+
+    box-shadow:0 0 30px rgba(184,154,170,.18);
+
+}
+
+#display{
+
+    width:100%;
+
+    height:70px;
+
+    border:none;
+
+    outline:none;
+
+    background:#3A3240;
+
+    color:white;
+
+    font-size:2rem;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    text-align:right;
+
+    margin-bottom:20px;
+
+}
+
+.button-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:12px;
+
+}
+
+.button-grid button{
+
+    height:60px;
+
+    border:none;
+
+    border-radius:15px;
+
+    background:#413746;
+
+    color:white;
+
+    font-size:1.2rem;
+
+    transition:.3s;
+
+}
+
+.button-grid button:hover{
+
+    background:var(--primary);
+
+    transform:translateY(-3px);
+
+}
+
+.operator{
+
+    background:#715C70 !important;
+
+}
+
+.special{
+
+    background:#5C4A5B !important;
+
+}
+
+.equals{
+
+    grid-column:span 2;
+
+    background:linear-gradient(
+        135deg,
+        var(--primary),
+        var(--secondary)
+    ) !important;
+
+    font-size:1.4rem;
+
+}
+
+.equals:hover{
+
+    box-shadow:0 0 20px rgba(184,154,170,.5);
+
+}
+
+/*======================================
         END OF STYLESHEET
 =======================================*/
