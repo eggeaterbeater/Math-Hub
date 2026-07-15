@@ -382,3 +382,209 @@ setTimeout(function(){
 },400);
 
 }
+
+/*======================================
+        VOLUME CALCULATORS
+======================================*/
+
+//==============================
+// Cube
+//==============================
+
+function cubeVolume(){
+
+    const side = parseFloat(document.getElementById("cubeSide").value);
+
+    const result = document.getElementById("cubeResult");
+
+    if(isNaN(side)){
+
+        result.innerHTML = "Please enter a valid side length.";
+        return;
+
+    }
+
+    const volume = Math.pow(side,3);
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Rectangular Prism
+//==============================
+
+function prismVolume(){
+
+    const length = parseFloat(document.getElementById("prismLength").value);
+    const width = parseFloat(document.getElementById("prismWidth").value);
+    const height = parseFloat(document.getElementById("prismHeight").value);
+
+    const result = document.getElementById("prismResult");
+
+    if(isNaN(length) || isNaN(width) || isNaN(height)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const volume = length * width * height;
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Cylinder
+//==============================
+
+function cylinderVolume(){
+
+    const radius = parseFloat(document.getElementById("cylinderRadius").value);
+    const height = parseFloat(document.getElementById("cylinderHeight").value);
+
+    const result = document.getElementById("cylinderResult");
+
+    if(isNaN(radius) || isNaN(height)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const volume = Math.PI * radius * radius * height;
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Cone
+//==============================
+
+function coneVolume(){
+
+    const radius = parseFloat(document.getElementById("coneRadius").value);
+    const height = parseFloat(document.getElementById("coneHeight").value);
+
+    const result = document.getElementById("coneResult");
+
+    if(isNaN(radius) || isNaN(height)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const volume = (Math.PI * radius * radius * height) / 3;
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Sphere
+//==============================
+
+function sphereVolume(){
+
+    const radius = parseFloat(document.getElementById("sphereRadius").value);
+
+    const result = document.getElementById("sphereResult");
+
+    if(isNaN(radius)){
+
+        result.innerHTML = "Please enter a valid radius.";
+        return;
+
+    }
+
+    const volume = (4/3) * Math.PI * Math.pow(radius,3);
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Pyramid
+//==============================
+
+function pyramidVolume(){
+
+    const length = parseFloat(document.getElementById("pyramidLength").value);
+    const width = parseFloat(document.getElementById("pyramidWidth").value);
+    const height = parseFloat(document.getElementById("pyramidHeight").value);
+
+    const result = document.getElementById("pyramidResult");
+
+    if(isNaN(length) || isNaN(width) || isNaN(height)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const volume = (length * width * height) / 3;
+
+    result.innerHTML = "Volume = <strong>" + volume.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
