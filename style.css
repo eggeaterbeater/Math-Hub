@@ -169,42 +169,6 @@ header{
 }
 
 
-/*======================================
-        LOGO
-=======================================*/
-
-.logo{
-
-    display:flex;
-
-    align-items:center;
-
-    gap:12px;
-
-}
-
-.logo img{
-
-    width:45px;
-
-    height:45px;
-
-    object-fit:cover;
-
-}
-
-.logo span{
-
-    font-family:"Aniametric";
-
-    font-size:2rem;
-
-    letter-spacing:2px;
-
-    color:white;
-
-}
-
 
 /*======================================
         NAV LINKS
