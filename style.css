@@ -2075,5 +2075,51 @@ animation:shake .35s;
 }
 
 /*======================================
+        CURSOR SPARKLES
+=======================================*/
+
+.sparkle{
+
+    position:fixed;
+
+    width:10px;
+
+    height:10px;
+
+    pointer-events:none;
+
+    border-radius:50%;
+
+    background:#E8D7E8;
+
+    box-shadow:
+        0 0 8px #E8D7E8,
+        0 0 15px #B89AAA,
+        0 0 25px #8E7488;
+
+    animation:sparkleFade .8s linear forwards;
+
+    z-index:9999;
+
+}
+
+@keyframes sparkleFade{
+
+    0%{
+
+        opacity:1;
+        transform:scale(1);
+
+    }
+
+    100%{
+
+        opacity:0;
+        transform:translateY(-18px) scale(0);
+
+    }
+
+}
+/*======================================
         END OF STYLESHEET
 =======================================*/
