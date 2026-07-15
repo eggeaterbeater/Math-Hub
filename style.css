@@ -2076,46 +2076,42 @@ animation:shake .35s;
 
 /*======================================
         CURSOR SPARKLES
-=======================================*/
+======================================*/
 
 .sparkle{
 
-    position:fixed;
+    position: fixed;
 
-    width:10px;
+    pointer-events: none;
 
-    height:10px;
+    color: #EAD8F5;
 
-    pointer-events:none;
+    font-size: 18px;
 
-    border-radius:50%;
+    text-shadow:
+        0 0 8px #ffffff,
+        0 0 15px #CFA9FF,
+        0 0 25px #B89AAA;
 
-    background:#E8D7E8;
+    animation: sparkleFade 0.8s linear forwards;
 
-    box-shadow:
-        0 0 8px #E8D7E8,
-        0 0 15px #B89AAA,
-        0 0 25px #8E7488;
-
-    animation:sparkleFade .8s linear forwards;
-
-    z-index:9999;
+    z-index: 9999;
 
 }
 
 @keyframes sparkleFade{
 
-    0%{
+    from{
 
-        opacity:1;
-        transform:scale(1);
+        opacity: 1;
+        transform: translateY(0) scale(1);
 
     }
 
-    100%{
+    to{
 
-        opacity:0;
-        transform:translateY(-18px) scale(0);
+        opacity: 0;
+        transform: translateY(-20px) scale(0);
 
     }
 
