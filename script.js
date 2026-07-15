@@ -227,3 +227,158 @@ navLinks.forEach(link => {
     });
 
 });
+
+/*======================================
+        AREA CALCULATORS
+======================================*/
+
+// Rectangle
+function rectangleArea(){
+
+    const length = parseFloat(document.getElementById("rectLength").value);
+    const width = parseFloat(document.getElementById("rectWidth").value);
+
+    if(isNaN(length) || isNaN(width)){
+
+        document.getElementById("rectResult").innerHTML =
+        "Please enter valid values.";
+
+        return;
+
+    }
+
+    const area = length * width;
+
+    document.getElementById("rectResult").innerHTML =
+    "Area = <strong>" + area.toFixed(2) + "</strong>";
+
+}
+
+
+
+// Square
+function squareArea(){
+
+    const side = parseFloat(document.getElementById("squareSide").value);
+
+    if(isNaN(side)){
+
+        document.getElementById("squareResult").innerHTML =
+        "Please enter a valid side.";
+
+        return;
+
+    }
+
+    const area = side * side;
+
+    document.getElementById("squareResult").innerHTML =
+    "Area = <strong>" + area.toFixed(2) + "</strong>";
+
+}
+
+
+
+// Triangle
+function triangleArea(){
+
+    const base = parseFloat(document.getElementById("triangleBase").value);
+    const height = parseFloat(document.getElementById("triangleHeight").value);
+
+    if(isNaN(base) || isNaN(height)){
+
+        document.getElementById("triangleResult").innerHTML =
+        "Please enter valid values.";
+
+        return;
+
+    }
+
+    const area = (base * height) / 2;
+
+    document.getElementById("triangleResult").innerHTML =
+    "Area = <strong>" + area.toFixed(2) + "</strong>";
+
+}
+
+
+
+// Circle
+function circleArea(){
+
+    const radius = parseFloat(document.getElementById("circleRadius").value);
+
+    if(isNaN(radius)){
+
+        document.getElementById("circleResult").innerHTML =
+        "Please enter a valid radius.";
+
+        return;
+
+    }
+
+    const area = Math.PI * radius * radius;
+
+    document.getElementById("circleResult").innerHTML =
+    "Area = <strong>" + area.toFixed(2) + "</strong>";
+
+}
+
+
+
+// Parallelogram
+function parallelogramArea(){
+
+    const base = parseFloat(document.getElementById("paraBase").value);
+    const height = parseFloat(document.getElementById("paraHeight").value);
+
+    if(isNaN(base) || isNaN(height)){
+
+        document.getElementById("paraResult").innerHTML =
+        "Please enter valid values.";
+
+        return;
+
+    }
+
+    const area = base * height;
+
+    document.getElementById("paraResult").innerHTML =
+    "Area = <strong>" + area.toFixed(2) + "</strong>";
+
+}
+
+
+
+// Trapezoid
+function trapezoidArea(){
+
+    const base1 = parseFloat(document.getElementById("trapBase1").value);
+    const base2 = parseFloat(document.getElementById("trapBase2").value);
+    const height = parseFloat(document.getElementById("trapHeight").value);
+
+    if(isNaN(base1) || isNaN(base2) || isNaN(height)){
+
+        document.getElementById("trapResult").innerHTML =
+        "Please enter valid values.";
+
+        return;
+
+    }
+
+    const area = ((base1 + base2) * height) / 2;
+
+    const result = document.getElementById("rectResult");
+
+result.innerHTML =
+"Area = <strong>" + area.toFixed(2) + "</strong>";
+
+result.classList.add("success");
+
+setTimeout(function(){
+
+    result.classList.remove("success");
+
+},400);
+
+}
