@@ -1,5 +1,7 @@
 const display = document.getElementById("display");
 
+const historyList = document.getElementById("historyList");
+
 function appendValue(value){
 
 display.value += value;
@@ -14,33 +16,50 @@ display.value="";
 
 function calculate(){
 
-try{
+    try{
 
-display.value = eval(display.value);
+        const expression = display.value;
 
-display.classList.add("success");
+        const answer = eval(expression);
 
-setTimeout(()=>{
+        display.value = answer;
 
-display.classList.remove("success");
+        display.classList.add("pop");
 
-},400);
+        setTimeout(()=>{
 
-}
+            display.classList.remove("pop");
 
-catch{
+        },300);
 
-display.value="Error";
+        const item = document.createElement("p");
 
-display.classList.add("shake");
+        item.textContent = `${expression} = ${answer}`;
 
-setTimeout(()=>{
+        if(historyList.firstElementChild &&
+           historyList.firstElementChild.textContent==="No calculations yet."){
 
-display.classList.remove("shake");
+            historyList.innerHTML="";
 
-},400);
+        }
 
-}
+        historyList.prepend(item);
+
+    }
+
+    catch{
+
+        display.value="Error";
+
+        display.classList.add("shake");
+
+        setTimeout(()=>{
+
+            display.classList.remove("shake");
+
+        },300);
+
+    }
 
 }
 
