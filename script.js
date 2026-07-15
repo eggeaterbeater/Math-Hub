@@ -80,6 +80,21 @@ function power(){
         CURSOR SPARKLES
 ======================================*/
 
+/*======================================
+        MAGICAL CURSOR TRAIL
+======================================*/
+
+const sparkleSymbols = [
+    "✦",
+    "✧",
+    "✨",
+    "★",
+    "☆",
+    "♡",
+    "❀",
+    "❁"
+];
+
 let sparkleTimer = 0;
 
 document.addEventListener("mousemove", function(e){
@@ -92,10 +107,18 @@ document.addEventListener("mousemove", function(e){
 
     sparkle.className = "sparkle";
 
-    sparkle.innerHTML = "✦";
+    sparkle.innerHTML = sparkleSymbols[
+        Math.floor(Math.random() * sparkleSymbols.length)
+    ];
 
     sparkle.style.left = e.clientX + "px";
     sparkle.style.top = e.clientY + "px";
+
+    sparkle.style.fontSize =
+        (18 + Math.random() * 16) + "px";
+
+    sparkle.style.transform =
+        `rotate(${Math.random()*360}deg)`;
 
     document.body.appendChild(sparkle);
 
@@ -103,7 +126,6 @@ document.addEventListener("mousemove", function(e){
 
         sparkle.remove();
 
-    }, 800);
+    },1000);
 
-});
 });
