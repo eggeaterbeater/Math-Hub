@@ -1792,6 +1792,58 @@ section{
 
         grid-template-columns:1fr;
 
+            /*==============================
+        HISTORY
+==============================*/
+
+.history{
+
+    margin:20px 0;
+
+    padding:15px;
+
+    background:rgba(255,255,255,.05);
+
+    border-radius:15px;
+
+    max-height:160px;
+
+    overflow-y:auto;
+
+}
+
+.history h3{
+
+    color:var(--secondary);
+
+    margin-bottom:10px;
+
+    font-size:1rem;
+
+}
+
+#historyList{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:10px;
+
+}
+
+#historyList p{
+
+    color:var(--light);
+
+    font-size:.9rem;
+
+    border-bottom:1px solid rgba(255,255,255,.05);
+
+    padding-bottom:8px;
+
+}
+
     }
 
 }
