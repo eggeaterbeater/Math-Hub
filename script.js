@@ -204,3 +204,26 @@ function circumferenceFromDiameter(){
         "Circumference = <strong>" + circumference.toFixed(2) + "</strong>";
 
 }
+/*======================================
+        MOBILE NAVIGATION
+======================================*/
+
+function toggleMenu(){
+
+    const nav = document.getElementById("navLinks");
+
+    nav.classList.toggle("show");
+
+}
+
+const navLinks = document.querySelectorAll("#navLinks a");
+
+navLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        document.getElementById("navLinks").classList.remove("show");
+
+    });
+
+});
