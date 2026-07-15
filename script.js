@@ -76,26 +76,27 @@ function power(){
     display.value = "(" + display.value + ")**2";
 }
 
-/*==============================
+/*======================================
         CURSOR SPARKLES
-==============================*/
+======================================*/
 
-document.addEventListener("mousemove",(e)=>{
+document.addEventListener("mousemove", function(e){
 
-    const sparkle=document.createElement("span");
+    const sparkle = document.createElement("span");
 
-    sparkle.className="sparkle";
+    sparkle.className = "sparkle";
 
-    sparkle.style.left=e.clientX+"px";
+    sparkle.innerHTML = "✦";
 
-    sparkle.style.top=e.clientY+"px";
+    sparkle.style.left = e.clientX + "px";
+    sparkle.style.top = e.clientY + "px";
 
     document.body.appendChild(sparkle);
 
-    setTimeout(()=>{
+    setTimeout(function(){
 
         sparkle.remove();
 
-    },800);
+    }, 800);
 
 });
