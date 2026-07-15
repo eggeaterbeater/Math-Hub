@@ -80,7 +80,13 @@ function power(){
         CURSOR SPARKLES
 ======================================*/
 
+let sparkleTimer = 0;
+
 document.addEventListener("mousemove", function(e){
+
+    if(Date.now() - sparkleTimer < 40) return;
+
+    sparkleTimer = Date.now();
 
     const sparkle = document.createElement("span");
 
@@ -99,4 +105,5 @@ document.addEventListener("mousemove", function(e){
 
     }, 800);
 
+});
 });
