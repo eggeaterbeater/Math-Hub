@@ -76,3 +76,26 @@ function power(){
     display.value = "(" + display.value + ")**2";
 }
 
+/*==============================
+        CURSOR SPARKLES
+==============================*/
+
+document.addEventListener("mousemove",(e)=>{
+
+    const sparkle=document.createElement("span");
+
+    sparkle.className="sparkle";
+
+    sparkle.style.left=e.clientX+"px";
+
+    sparkle.style.top=e.clientY+"px";
+
+    document.body.appendChild(sparkle);
+
+    setTimeout(()=>{
+
+        sparkle.remove();
+
+    },800);
+
+});
