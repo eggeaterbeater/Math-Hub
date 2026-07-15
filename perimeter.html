@@ -1,1 +1,278 @@
-yes
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Aniametric | Perimeter</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!--================ HEADER ================-->
+
+<header>
+
+    <nav class="navbar">
+
+        <div class="logo">
+
+            <img src="img/logo.jpg" alt="Aniametric Logo">
+
+            <div class="logo-text">
+
+                <span class="title">Aniametric</span>
+
+                <span class="subtitle">Geometry Calculator</span>
+
+            </div>
+
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="calculator.html">Calculator</a></li>
+
+            <li><a href="diameter.html">Diameter</a></li>
+
+            <li><a href="area.html">Area</a></li>
+
+            <li><a href="volume.html">Volume</a></li>
+
+            <li><a class="active" href="perimeter.html">Perimeter</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+        </ul>
+
+        <div class="menu-btn" onclick="toggleMenu()">
+
+            ☰
+
+        </div>
+
+    </nav>
+
+</header>
+
+
+
+<!--================ PAGE TITLE ================-->
+
+<section class="page-title fade-in">
+
+    <h1>Perimeter Calculators</h1>
+
+    <p>
+
+        Calculate the perimeter of common two-dimensional geometric figures quickly and accurately.
+
+    </p>
+
+</section>
+
+
+
+<!--================ PERIMETER CALCULATORS ================-->
+
+<section class="calculator-grid">
+
+  <!--================ SQUARE ================-->
+
+<div class="calculator-card">
+
+    <h2>Square</h2>
+
+    <div class="formula">
+
+        Formula: P = 4 × Side
+
+    </div>
+
+    <input type="number" id="squarePerimeterSide" placeholder="Enter Side Length">
+
+    <button class="solve-btn" onclick="squarePerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="squarePerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+
+
+<!--================ RECTANGLE ================-->
+
+<div class="calculator-card">
+
+    <h2>Rectangle</h2>
+
+    <div class="formula">
+
+        Formula: P = 2 × (Length + Width)
+
+    </div>
+
+    <input type="number" id="rectPerimeterLength" placeholder="Enter Length">
+
+    <input type="number" id="rectPerimeterWidth" placeholder="Enter Width">
+
+    <button class="solve-btn" onclick="rectanglePerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="rectPerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+
+
+<!--================ TRIANGLE ================-->
+
+<div class="calculator-card">
+
+    <h2>Triangle</h2>
+
+    <div class="formula">
+
+        Formula: P = Side₁ + Side₂ + Side₃
+
+    </div>
+
+    <input type="number" id="triangleSide1" placeholder="Enter Side 1">
+
+    <input type="number" id="triangleSide2" placeholder="Enter Side 2">
+
+    <input type="number" id="triangleSide3" placeholder="Enter Side 3">
+
+    <button class="solve-btn" onclick="trianglePerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="trianglePerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+  <!--================ CIRCLE ================-->
+
+<div class="calculator-card">
+
+    <h2>Circle (Circumference)</h2>
+
+    <div class="formula">
+
+        Formula: C = 2 × π × r
+
+    </div>
+
+    <input type="number" id="circlePerimeterRadius" placeholder="Enter Radius">
+
+    <button class="solve-btn" onclick="circlePerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="circlePerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+
+
+<!--================ PARALLELOGRAM ================-->
+
+<div class="calculator-card">
+
+    <h2>Parallelogram</h2>
+
+    <div class="formula">
+
+        Formula: P = 2 × (Base + Side)
+
+    </div>
+
+    <input type="number" id="paraPerimeterBase" placeholder="Enter Base">
+
+    <input type="number" id="paraPerimeterSide" placeholder="Enter Side">
+
+    <button class="solve-btn" onclick="parallelogramPerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="paraPerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+
+
+<!--================ TRAPEZOID ================-->
+
+<div class="calculator-card">
+
+    <h2>Trapezoid</h2>
+
+    <div class="formula">
+
+        Formula: P = Side₁ + Side₂ + Side₃ + Side₄
+
+    </div>
+
+    <input type="number" id="trapSide1" placeholder="Enter Side 1">
+
+    <input type="number" id="trapSide2" placeholder="Enter Side 2">
+
+    <input type="number" id="trapSide3" placeholder="Enter Side 3">
+
+    <input type="number" id="trapSide4" placeholder="Enter Side 4">
+
+    <button class="solve-btn" onclick="trapezoidPerimeter()">
+
+        Solve
+
+    </button>
+
+    <div class="result" id="trapPerimeterResult">
+
+        Answer will appear here.
+
+    </div>
+
+</div>
+
+</section>
