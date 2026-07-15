@@ -2130,6 +2130,54 @@ animation:shake .35s;
     }
 
 }
+
 /*======================================
-        END OF STYLESHEET
-=======================================*/
+            SOCIALS
+======================================*/
+
+.socials{
+
+    margin-top:35px;
+
+}
+
+.socials h3{
+
+    color:var(--secondary);
+
+    margin-bottom:18px;
+
+}
+
+.socials a{
+
+    display:block;
+
+    width:fit-content;
+
+    margin-bottom:12px;
+
+    padding:12px 24px;
+
+    border-radius:50px;
+
+    background:var(--card);
+
+    color:white;
+
+    transition:.35s;
+
+    border:1px solid rgba(255,255,255,.05);
+
+}
+
+.socials a:hover{
+
+    background:var(--primary);
+
+    transform:translateX(8px);
+
+    box-shadow:0 0 20px rgba(184,154,170,.35);
+
+}
+
