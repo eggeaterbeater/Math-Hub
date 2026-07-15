@@ -129,3 +129,78 @@ document.addEventListener("mousemove", function(e){
     },1000);
 
 });
+
+/*======================================
+        DIAMETER CALCULATORS
+======================================*/
+
+// Diameter from Radius
+function diameterFromRadius(){
+
+    const radius = parseFloat(document.getElementById("radiusInput").value);
+
+    if(isNaN(radius)){
+        document.getElementById("radiusResult").innerHTML = "Please enter a valid radius.";
+        return;
+    }
+
+    const diameter = radius * 2;
+
+    document.getElementById("radiusResult").innerHTML =
+        "Diameter = <strong>" + diameter.toFixed(2) + "</strong>";
+
+}
+
+
+// Diameter from Circumference
+function diameterFromCircumference(){
+
+    const circumference = parseFloat(document.getElementById("circumferenceInput").value);
+
+    if(isNaN(circumference)){
+        document.getElementById("circumferenceResult").innerHTML = "Please enter a valid circumference.";
+        return;
+    }
+
+    const diameter = circumference / Math.PI;
+
+    document.getElementById("circumferenceResult").innerHTML =
+        "Diameter = <strong>" + diameter.toFixed(2) + "</strong>";
+
+}
+
+
+// Radius from Diameter
+function radiusFromDiameter(){
+
+    const diameter = parseFloat(document.getElementById("diameterInput").value);
+
+    if(isNaN(diameter)){
+        document.getElementById("diameterResult").innerHTML = "Please enter a valid diameter.";
+        return;
+    }
+
+    const radius = diameter / 2;
+
+    document.getElementById("diameterResult").innerHTML =
+        "Radius = <strong>" + radius.toFixed(2) + "</strong>";
+
+}
+
+
+// Circumference from Diameter
+function circumferenceFromDiameter(){
+
+    const diameter = parseFloat(document.getElementById("diameterCircInput").value);
+
+    if(isNaN(diameter)){
+        document.getElementById("circumferenceDiameterResult").innerHTML = "Please enter a valid diameter.";
+        return;
+    }
+
+    const circumference = Math.PI * diameter;
+
+    document.getElementById("circumferenceDiameterResult").innerHTML =
+        "Circumference = <strong>" + circumference.toFixed(2) + "</strong>";
+
+}
