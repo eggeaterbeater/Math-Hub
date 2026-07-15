@@ -588,3 +588,210 @@ function pyramidVolume(){
     },400);
 
 }
+
+/*======================================
+        PERIMETER CALCULATORS
+======================================*/
+
+//==============================
+// Square
+//==============================
+
+function squarePerimeter(){
+
+    const side = parseFloat(document.getElementById("squarePerimeterSide").value);
+
+    const result = document.getElementById("squarePerimeterResult");
+
+    if(isNaN(side)){
+
+        result.innerHTML = "Please enter a valid side length.";
+        return;
+
+    }
+
+    const perimeter = 4 * side;
+
+    result.innerHTML = "Perimeter = <strong>" + perimeter.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Rectangle
+//==============================
+
+function rectanglePerimeter(){
+
+    const length = parseFloat(document.getElementById("rectPerimeterLength").value);
+    const width = parseFloat(document.getElementById("rectPerimeterWidth").value);
+
+    const result = document.getElementById("rectPerimeterResult");
+
+    if(isNaN(length) || isNaN(width)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const perimeter = 2 * (length + width);
+
+    result.innerHTML = "Perimeter = <strong>" + perimeter.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Triangle
+//==============================
+
+function trianglePerimeter(){
+
+    const side1 = parseFloat(document.getElementById("triangleSide1").value);
+    const side2 = parseFloat(document.getElementById("triangleSide2").value);
+    const side3 = parseFloat(document.getElementById("triangleSide3").value);
+
+    const result = document.getElementById("trianglePerimeterResult");
+
+    if(isNaN(side1) || isNaN(side2) || isNaN(side3)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const perimeter = side1 + side2 + side3;
+
+    result.innerHTML = "Perimeter = <strong>" + perimeter.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Circle (Circumference)
+//==============================
+
+function circlePerimeter(){
+
+    const radius = parseFloat(document.getElementById("circlePerimeterRadius").value);
+
+    const result = document.getElementById("circlePerimeterResult");
+
+    if(isNaN(radius)){
+
+        result.innerHTML = "Please enter a valid radius.";
+        return;
+
+    }
+
+    const circumference = 2 * Math.PI * radius;
+
+    result.innerHTML = "Circumference = <strong>" + circumference.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Parallelogram
+//==============================
+
+function parallelogramPerimeter(){
+
+    const base = parseFloat(document.getElementById("paraPerimeterBase").value);
+    const side = parseFloat(document.getElementById("paraPerimeterSide").value);
+
+    const result = document.getElementById("paraPerimeterResult");
+
+    if(isNaN(base) || isNaN(side)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const perimeter = 2 * (base + side);
+
+    result.innerHTML = "Perimeter = <strong>" + perimeter.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
+
+
+
+//==============================
+// Trapezoid
+//==============================
+
+function trapezoidPerimeter(){
+
+    const side1 = parseFloat(document.getElementById("trapSide1").value);
+    const side2 = parseFloat(document.getElementById("trapSide2").value);
+    const side3 = parseFloat(document.getElementById("trapSide3").value);
+    const side4 = parseFloat(document.getElementById("trapSide4").value);
+
+    const result = document.getElementById("trapPerimeterResult");
+
+    if(isNaN(side1) || isNaN(side2) || isNaN(side3) || isNaN(side4)){
+
+        result.innerHTML = "Please enter valid values.";
+        return;
+
+    }
+
+    const perimeter = side1 + side2 + side3 + side4;
+
+    result.innerHTML = "Perimeter = <strong>" + perimeter.toFixed(2) + "</strong>";
+
+    result.classList.add("success");
+
+    setTimeout(function(){
+
+        result.classList.remove("success");
+
+    },400);
+
+}
