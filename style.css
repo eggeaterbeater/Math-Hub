@@ -1831,6 +1831,50 @@ section{
 
 }
 
+.success{
+
+animation:pop .35s;
+
+}
+
+@keyframes pop{
+
+0%{
+
+transform:scale(.8);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+100%{
+
+transform:scale(1);
+
+}
+
+}
+
+.shake{
+
+animation:shake .35s;
+
+}
+
+@keyframes shake{
+
+0%{transform:translateX(0);}
+25%{transform:translateX(-8px);}
+50%{transform:translateX(8px);}
+75%{transform:translateX(-8px);}
+100%{transform:translateX(0);}
+
+}
+
 
 /*======================================
         END OF STYLESHEET
